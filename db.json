@@ -1,0 +1,90 @@
+{
+  "feeds": [
+    {
+      "id": 1,
+      "username": "residente",
+      "user_profile_pic": "images/2.jpg",
+      "content": "images/1.jpg",
+      "likes": 41147,
+      "liked": true,
+      "caption": "En el parque con Milo. At the park with my son Milo",
+      "comments": [
+        {
+          "id": 1,
+          "username": "emmanatha",
+          "content": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "id": 2,
+          "username": "marc.isern",
+          "content": "Lorem ipsum dolor sit amet consectetur."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "shakira",
+      "user_profile_pic": "images/5.jpg",
+      "content": "images/post-4.jpg",
+      "likes": 302728,
+      "liked": true,
+      "caption": "En el parque con Milo. At the park with my son Milo",
+      "comments": [
+        {
+          "id": 3,
+          "username": "emmanatha",
+          "content": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "id": 4,
+          "username": "marc.isern",
+          "content": "Lorem ipsum dolor sit amet consectetur."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "residente",
+      "user_profile_pic": "images/2.jpg",
+      "content": "images/1.jpg",
+      "likes": 102537,
+      "liked": false,
+      "caption": "En el parque con Milo. At the park with my son Milo",
+      "comments": [
+        {
+          "id": 1,
+          "username": "emmanatha",
+          "content": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "id": 2,
+          "username": "marc.isern",
+          "content": "Lorem ipsum dolor sit amet consectetur."
+        }
+      ]
+    }
+  ],
+  "histories": [
+    {
+      "id": 1,
+      "username": "residente",
+      "user_profile_pic": "images/2.jpg",
+      "link": "/images/1.jpg",
+      "time": "HACE 3 HORAS"
+    },
+    {
+      "id": 2,
+      "username": "shakira",
+      "user_profile_pic": "images/5.jpg",
+      "link": "/images/1.jpg",
+      "time": "HACE 58 MINUTOS"
+    },
+    {
+      "id": 3,
+      "username": "residente",
+      "user_profile_pic": "images/2.jpg",
+      "link": "/images/1.jpg",
+      "time": "HACE 4 HORAS"
+    }
+  ]
+}
