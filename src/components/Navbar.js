@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <div className="container">
-        <a className="navbar-brand" href="#/">
+        <Link className="navbar-brand" to="/">
           <i className="fab fa-2x fa-instagram" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,9 +23,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav d-flex flex-grow-1 align-items-center options">
             <li className="nav-item border-left mx-2 px-2">
-              <a className="nav-link" href="#/">
+              <Link className="nav-link" to="/">
                 <img className="logo" src="./images/logo.png" alt="Instagram" />
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown mx-auto search-form">
               <form className="form-inline my-2 my-lg-0">

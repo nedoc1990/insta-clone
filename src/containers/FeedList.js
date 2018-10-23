@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchFeeds, toggleLikeFeed } from "../actions/feed-actions";
+import Comment from "../components/Comment";
 
 const Card = ({
   id,
@@ -15,14 +17,14 @@ const Card = ({
 }) => (
   <div className="card mb-4 box-shadow">
     <div className="card-header bg-white text-title">
-      <a href="#/" className="text-dark">
+      <Link className="text-dark" to={`/${username}/`}>
         <img
           className="rounded-circle post-profile-pic"
           src={user_profile_pic}
           alt="profile-pic"
         />
         <span className="pl-2">{username}</span>
-      </a>
+      </Link>
     </div>
     <img alt="1" src={content} data-holder-rendered="true" />
     <div className="card-body pb-2">
@@ -50,33 +52,24 @@ const Card = ({
         </a>
       </section>
       <section className="comments m0">
-        <ul className="list-unstyled">
+        <ul className="list-unstyled mb-2">
           <li>
             <a href="#/" className="text-dark text-title">
               {username}
             </a>
-            <span>{caption}</span>
+            <span className="pl-2">{caption}</span>
           </li>
-          <li>
+          <li className="pt-1">
             <a href="#/" className="text-muted">
               Cargar más comentarios
             </a>
           </li>
-          <li>
-            <a href="#/" className="text-dark text-title">
-              emmanatha
-            </a>
-            <span>Lorem ipsum dolor sit amet.</span>
-          </li>
-          <li>
-            <a href="#/" className="text-dark text-title">
-              marc.isern
-            </a>
-            <span>Lorem ipsum dolor sit amet consectetur.</span>
-          </li>
+          {comments.map(comment => (
+            <Comment key={comment.id} {...comment} />
+          ))}
           <li>
             <a
-              className="text-muted m0 font-weight-light text-subtitle"
+              className="text-muted m0 font-weight-light text-history-subtitle"
               href="#/"
             >
               <time

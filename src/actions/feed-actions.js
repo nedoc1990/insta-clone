@@ -5,12 +5,12 @@ import {
   TOGGLE_LIKE_FEED
 } from "./";
 
-const baseUrl = "http://localhost:8080/feeds";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 export const fetchFeeds = () => {
   return dispatch => {
     fetchFeedsBegin();
-    return fetch(baseUrl)
+    return fetch(`${baseUrl}/feeds`)
       .then(handleErrors)
       .then(res => res.json())
       .then(json => {

@@ -4,12 +4,12 @@ import {
   FETCH_HISTORIES_FAILURE
 } from "./";
 
-const baseUrl = "http://localhost:8080/histories";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 export const fetchHistories = () => {
   return dispatch => {
     fetchHistoriesBegin();
-    return fetch(baseUrl)
+    return fetch(`${baseUrl}/histories`)
       .then(handleErrors)
       .then(res => res.json())
       .then(json => {
