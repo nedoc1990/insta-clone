@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const logo = "./images/logo.png";
+
 const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
@@ -24,7 +26,7 @@ const Navbar = () => {
           <ul className="navbar-nav d-flex flex-grow-1 align-items-center options">
             <li className="nav-item border-left mx-2 px-2">
               <Link className="nav-link" to="/">
-                <img className="logo" src="./images/logo.png" alt="Instagram" />
+                <img className="logo" src={`/${logo}`} alt="Instagram" />
               </Link>
             </li>
             <li className="nav-item dropdown mx-auto search-form">

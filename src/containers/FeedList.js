@@ -26,12 +26,18 @@ const Card = ({
         <span className="pl-2">{username}</span>
       </Link>
     </div>
-    <img alt="1" src={content} data-holder-rendered="true" />
+    <img
+      alt="1"
+      src={content}
+      data-holder-rendered="true"
+      onDoubleClick={() => toggleLike(id)}
+    />
     <div className="card-body pb-2">
       <section className="mb-2">
         {liked ? (
           <i
             className="fas fa-2x fa-heart mr-3"
+            style={{ color: "#EB4B59" }}
             aria-hidden="true"
             onClick={() => toggleLike(id)}
           />

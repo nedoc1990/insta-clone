@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchHistories } from "../actions/history-actions";
 
@@ -8,23 +9,23 @@ const HistoryList = ({ histories }) => {
   });
 };
 
-const HistoryItem = ({ link, time, username, user_profile_pic }) => {
+const HistoryItem = ({ time, username, user_profile_pic }) => {
   return (
     <div className="row mb-3">
       <div className="col-2">
-        <a href={link}>
+        <Link className="text-dark" to={`/${username}/`}>
           <img
             className="rounded-circle history-profile-pic my-img-thumbnail"
             src={user_profile_pic}
             alt="user-profile-pic"
           />
-        </a>
+        </Link>
       </div>
       <div className="pl-4 col-10 d-flex flex-column justify-content-center">
         <div>
-          <a href="#/" className="text-title text-dark">
+          <Link to={`/${username}/`} className="text-title text-dark">
             {username}
-          </a>
+          </Link>
         </div>
         <div className="text-muted font-weight-light text-history-subtitle">
           {time}

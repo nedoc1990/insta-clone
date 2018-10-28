@@ -99,5 +99,109 @@
       "link": "/images/1.jpg",
       "time": "HACE 4 HORAS"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "shakira",
+      "name": "Shakira",
+      "image": "./images/shak-profile.jpg",
+      "description": [
+        "DREAM. You Only Live Once. Discover the new fragrance by Shakira / Descubran la nueva fragancia de Shakira."
+      ],
+      "link": "bit.ly/Dream2D17bot",
+      "mutualfollowers": [
+        {
+          "id": 1,
+          "username": "antorocuzzo88"
+        },
+        {
+          "id": 2,
+          "username": "danialves"
+        }
+      ],
+      "highlights": [
+        {
+          "id": 1,
+          "title": "perfumes",
+          "image": "./images/shak-highlight-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "clandestino",
+          "image": "./images/shak-highlight-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "el dorado",
+          "image": "./images/shak-highlight-3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "rehearsel",
+          "image": "./images/shak-highlight-4.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "residente",
+      "name": "René Pérez Joglar",
+      "image": "./images/residente-profile.jpg",
+      "description": ["RAP BRUTO💉😈👿"],
+      "link": "smarturl.it/RapBruto/youtube",
+      "mutualfollowers": [],
+      "highlights": [
+        {
+          "id": 1,
+          "title": "rap bruto",
+          "image": "./images/residente-highlight-1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "wesbos",
+      "name": "Wes Bos",
+      "image": "./images/wesbos-profile.jpg",
+      "description": [
+        "→ Fullstack × Dev",
+        "→ Follow for 🔥Tips",
+        "→ JS×React×CSS×Node",
+        "→ Setup: Cobalt2 × VS Code × Operator Mono",
+        "→ I make Web Dev Courses",
+        "→ Podcaster Syntax.fm"
+      ],
+      "link": "wesbos.com",
+      "mutualfollowers": [],
+      "highlights": [
+        {
+          "id": 1,
+          "title": "books i like",
+          "image": "./images/wesbos-highlight-1.jpg"
+        },
+        { "id": 2, "title": "ama", "image": "./images/wesbos-highlight-2.jpg" },
+        {
+          "id": 3,
+          "title": "pizza",
+          "image": "./images/wesbos-highlight-3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "cooking",
+          "image": "./images/wesbos-highlight-4.jpg"
+        },
+        {
+          "id": 5,
+          "title": "smoking",
+          "image": "./images/wesbos-highlight-5.jpg"
+        },
+        {
+          "id": 6,
+          "title": "drift",
+          "image": "./images/wesbos-highlight-6.jpg"
+        }
+      ]
+    }
   ]
 }

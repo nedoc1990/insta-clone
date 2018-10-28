@@ -22,7 +22,6 @@ export const fetchFeeds = () => {
 };
 
 export const toggleLikeFeed = id => {
-  console.log(id);
   return {
     type: TOGGLE_LIKE_FEED,
     payload: id
