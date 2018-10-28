@@ -1,9 +1,12 @@
 import {
+  ADD_COMMENT,
   FETCH_FEEDS_BEGIN,
   FETCH_FEEDS_SUCCESS,
   FETCH_FEEDS_FAILURE,
   TOGGLE_LIKE_FEED
 } from "../actions/index";
+
+let commentsCounter = 7;
 
 const initialState = {
   items: [],
@@ -13,6 +16,28 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case ADD_COMMENT:
+      const updatedItems = state.items.map(
+        item =>
+          item.id === action.payload.feedId
+            ? {
+                ...item,
+                comments: [
+                  ...item.comments,
+                  {
+                    id: commentsCounter++,
+                    username: "nedoc1990",
+                    content: action.payload.content
+                  }
+                ]
+              }
+            : item
+      );
+      console.log(updatedItems);
+      return {
+        ...state,
+        items: updatedItems
+      };
     case FETCH_FEEDS_BEGIN:
       return {
         ...state,

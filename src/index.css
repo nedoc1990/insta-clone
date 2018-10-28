@@ -219,3 +219,7 @@ a.noborder {
 .image-cover:hover .invisible {
   visibility: visible !important;
 }
+
+.stretch {
+  width: 100%;
+}

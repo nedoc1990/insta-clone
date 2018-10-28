@@ -1,4 +1,5 @@
 import {
+  ADD_COMMENT,
   FETCH_FEEDS_BEGIN,
   FETCH_FEEDS_SUCCESS,
   FETCH_FEEDS_FAILURE,
@@ -18,6 +19,16 @@ export const fetchFeeds = () => {
         return json;
       })
       .catch(error => dispatch(fetchFeedsFailure(error)));
+  };
+};
+
+export const addComment = (feedId, content) => {
+  return {
+    type: ADD_COMMENT,
+    payload: {
+      feedId,
+      content
+    }
   };
 };
 
