@@ -17,7 +17,8 @@ class Card extends React.Component {
     });
   };
 
-  handleFormSubmit = () => {
+  handleFormSubmit = (evt) => {
+    evt.preventDefault();
     if (this.state.comment === "") {
       return;
     }
