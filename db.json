@@ -141,6 +141,26 @@
           "title": "rehearsel",
           "image": "./images/shak-highlight-4.jpg"
         }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "image": "./images/shak-media-1.jpg",
+          "likes": "551k",
+          "comments": 101
+        },
+        {
+          "id": 2,
+          "image": "./images/shak-media-2.jpg",
+          "likes": "932k",
+          "comments": 2344
+        },
+        {
+          "id": 3,
+          "image": "./images/shak-media-3.jpg",
+          "likes": "895k",
+          "comments": 1013
+        }
       ]
     },
     {
@@ -156,6 +176,26 @@
           "id": 1,
           "title": "rap bruto",
           "image": "./images/residente-highlight-1.jpg"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "image": "./images/residente-media-1.jpg",
+          "likes": "213k",
+          "comments": 101
+        },
+        {
+          "id": 2,
+          "image": "./images/residente-media-2.jpg",
+          "likes": "923k",
+          "comments": 2344
+        },
+        {
+          "id": 3,
+          "image": "./images/residente-media-3.jpg",
+          "likes": "234k",
+          "comments": 1013
         }
       ]
     },
@@ -200,6 +240,26 @@
           "id": 6,
           "title": "drift",
           "image": "./images/wesbos-highlight-6.jpg"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "image": "./images/wesbos-media-1.jpg",
+          "likes": "100k",
+          "comments": 101
+        },
+        {
+          "id": 2,
+          "image": "./images/wesbos-media-2.jpg",
+          "likes": "991k",
+          "comments": 2344
+        },
+        {
+          "id": 3,
+          "image": "./images/wesbos-media-3.jpg",
+          "likes": "132k",
+          "comments": 1013
         }
       ]
     }
